@@ -1,0 +1,418 @@
+/* =========================================
+   CABECERA (HEADER) Y NAVEGACIÓN
+   ========================================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav .menu li a:hover, 
+nav .menu li a.active {
+    color: #f39c12;
+}
+
+/* =========================================
+   GALERÍA PORTFOLIO
+   ========================================= */
+.galeria {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px; 
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.tarjeta img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+.contenido-tarjeta {
+    padding: 20px;
+    text-align: center;
+}
+
+/* =========================================
+   FOOTER (PIE DE PÁGINA)
+   ========================================= */
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}
+
+.rrss {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   ESTILOS GENERALES (Lo que faltaba)
+   ========================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* =========================================
+   CABECERA (HEADER) Y NAVEGACIÓN
+   ========================================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav .menu li a:hover, 
+nav .menu li a.active {
+    color: #f39c12;
+}
+
+/* =========================================
+   GALERÍA PORTFOLIO
+   ========================================= */
+.galeria {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px; 
+    padding: 20px 0;
+}
+
+.tarjeta {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+.contenido-tarjeta {
+    padding: 20px;
+    text-align: center;
+}
+
+/* =========================================
+   FORMULARIOS (Presupuesto)
+   ========================================= */
+.campo {
+    margin-bottom: 15px;
+}
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"],
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.checkbox-linea {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.botones-form button {
+    padding: 10px 20px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.botones-form button:hover {
+    background: #f39c12;
+}
+
+/* =========================================
+   FOOTER (PIE DE PÁGINA)
+   ========================================= */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.rrss {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   LA FÓRMULA MÁGICA: ADAPTACIÓN A MÓVILES
+   ========================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. Arreglamos la cabecera */
+    header {
+        flex-direction: column; /* Cambia de fila a columna (logo arriba, menú abajo) */
+        padding: 15px; /* Reducimos los márgenes laterales para ganar espacio */
+        text-align: center;
+    }
+
+    /* 2. Arreglamos el menú de navegación */
+    nav .menu {
+        flex-direction: column; /* Ponemos los enlaces uno debajo de otro */
+        gap: 15px; /* Espacio entre los botones */
+        margin-top: 20px; /* Separamos el menú del logo */
+    }
+
+    /* 3. Aseguramos que la galería no se aplaste (por si acaso) */
+    .galeria {
+        grid-template-columns: 1fr; /* Obliga a que haya solo 1 foto por fila en el móvil */
+    }
+    
+    /* 4. Ajustamos el contenedor del logo por si es muy grande */
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* =========================================
+   LIGHTBOX GALERÍA DINÁMICA (JS)
+   ========================================= */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro semitransparente */
+    display: none; /* Oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* Por encima de todo, incluso del menú */
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    animation: aparecer 0.3s ease;
+}
+
+.lightbox-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.lightbox-cerrar:hover {
+    color: #f39c12; /* Naranja corporativo al pasar el ratón */
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Hacemos que el cursor cambie a "lupa" o "mano" al pasar por las fotos */
+.tarjeta img {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
+/* =========================================
+   ESTILOS ESPECÍFICOS DEL PRESUPUESTO
+   ========================================= */
+form {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Evitamos que el checkbox ocupe el 100% */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+.checkbox-linea {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-linea label {
+    font-weight: normal;
+    margin: 0;
+}
+
+.caja-total {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.caja-total h3 {
+    margin: 0;
+    color: #f39c12;
+    font-size: 1.5rem;
+}
+
+.caja-errores {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffe6e6;
+    color: #c0392b;
+    border-left: 5px solid #c0392b;
+    border-radius: 4px;
+    display: none; /* Oculto por defecto */
+    font-weight: bold;
+}

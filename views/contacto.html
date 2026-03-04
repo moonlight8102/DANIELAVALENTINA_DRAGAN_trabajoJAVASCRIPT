@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaviDenisa8102 | Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/001logo_cabecera.jpg" alt="Logotipo DaviDenisa8102" width="180" height="50">
+            </a>
+            <h1>DaviDenisa8102</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header> <main>
+        <section id="contacto-info">
+            <h2>¿Dónde estamos?</h2>
+            <p>Ven a visitarnos o contáctanos para tu próximo proyecto.</p>
+            
+            <div class="datos-empresa" style="margin-top: 20px;">
+                <h3>Nuestras Oficinas</h3>
+                <p><strong>Dirección:</strong> Calle del Código, 123, Madrid</p>
+                <p><strong>Email:</strong> deny_dragan@yahoo.com</p>
+                <p><strong>Teléfono:</strong> +34 91 123 45 67</p>
+            </div>
+        </section>
+
+        <section style="text-align: center;">
+            <h2>Nuestra Ubicación</h2>
+            <p>Calle del Código, 123 - Madrid (Zona Imaginaria)</p>
+            
+            <div style="margin-top: 20px; padding: 15px; background: white; border: 1px solid #ddd; border-radius: 8px;">
+                <button id="btn-ruta" style="margin-bottom: 15px; padding: 10px 20px; background-color: #2c3e50; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; width: 100%; font-size: 1.1rem;">
+                📍 Calcular ruta desde mi ubicación
+                </button>
+                
+                <div id="mapa" style="height: 400px; width: 100%; border-radius: 4px; z-index: 1;"></div>
+            </div>
+        </section>
+    </main>
+   
+    <footer>
+        <div class="rrss"> 
+            <a href="https://github.com/moonlight8102/DANIELAVALENTINA_DRAGAN_trabajoJAVASCRIPT" target="_blank" rel="noopener">
+                <img src="../images/pie_01_github.JPG" alt="GitHub" width="70" height="35">
+            </a>
+            <a href="https://es.linkedin.com/" target="_blank" rel="noopener">
+                <img src="../images/pie_02_linkedin.JPG" alt="LinkedIn" width="70" height="35">
+            </a>
+            <a href="https://www.youtube.com/@DaviDenisa8102/" target="_blank" rel="noopener">
+                <img src="../images/pie_03_YouTube.JPG" alt="YouTube" width="70" height="35">
+            </a>
+        </div>
+        <p>Dirección: Calle Ejemplo 123, Madrid, España</p>
+        <p>Aviso legal: Sitio web educativo sin fines comerciales.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="../js/contacto.js"></script>
+
+</body>
+</html>

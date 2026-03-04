@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Presupuesto Dinámico</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/001logo_cabecera.jpg" alt="Logotipo DaviDenisa8102" width="180" height="50">
+            </a>
+            <h1>DaviDenisa8102</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Calculadora de Presupuesto Web</h2>
+            <p>Configura tu proyecto a medida y obtén el precio en tiempo real.</p>
+            
+            <div id="errores" class="caja-errores"></div>
+
+            <form id="formPresupuesto" action="#" method="post">
+                
+                <h3>1. Datos de Contacto</h3>
+                <div class="campo">
+                    <label for="nombre">Nombre (máx. 15 letras):</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellidos">Apellidos (máx. 40 letras):</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono (9 dígitos):</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <h3>2. Configuración del Proyecto</h3>
+                <div class="campo">
+                    <label for="producto">Tipo de Página Web:</label>
+                    <select id="producto" name="producto">
+                        <option value="0">-- Selecciona una opción --</option>
+                        <option value="500">Landing Page Básica (500€)</option>
+                        <option value="1200">Web Corporativa Completa (1200€)</option>
+                        <option value="2500">Tienda Online E-commerce (2500€)</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="plazo">Plazo estimado (en meses):</label>
+                    <input type="number" id="plazo" name="plazo" min="1" max="24" value="1">
+                    <small>Proyectos de 6 meses o más reciben un 10% de descuento.</small>
+                </div>
+
+                <div class="campo">
+                    <label>Extras disponibles:</label>
+                    <div class="checkbox-linea">
+                        <input type="checkbox" id="extra1" class="extra" value="200">
+                        <label for="extra1">Integración SEO (+200€)</label>
+                    </div>
+                    <div class="checkbox-linea">
+                        <input type="checkbox" id="extra2" class="extra" value="150">
+                        <label for="extra2">Logotipo Personalizado (+150€)</label>
+                    </div>
+                    <div class="checkbox-linea">
+                        <input type="checkbox" id="extra3" class="extra" value="300">
+                        <label for="extra3">Mantenimiento Anual (+300€)</label>
+                    </div>
+                </div>
+
+                <div class="caja-total">
+                    <h3>Presupuesto Total Estimado: <span id="precioFinal">0.00€</span></h3>
+                </div>
+
+                <div class="campo checkbox-linea">
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">He leído y acepto la Política de Privacidad</label>
+                </div>
+                
+                <div class="botones-form">
+                    <button type="submit" id="btn-enviar">Enviar Solicitud</button>
+                    <button type="reset" id="btn-resetear" style="background-color: #95a5a6; margin-top: 10px;">Resetear Formulario</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rrss"> 
+            <a href="https://github.com/moonlight8102/DANIELAVALENTINA_DRAGAN_trabajoHTML/" target="_blank" rel="noopener">
+                <img src="../images/pie_01_github.JPG" alt="GitHub" width="70" height="35">
+            </a>
+            <a href="https://es.linkedin.com/" target="_blank" rel="noopener">
+                <img src="../images/pie_02_linkedin.JPG" alt="LinkedIn" width="70" height="35">
+            </a>
+            <a href="https://www.youtube.com/@DaviDenisa8102/" target="_blank" rel="noopener">
+                <img src="../images/pie_03_YouTube.JPG" alt="YouTube" width="70" height="35">
+            </a>
+        </div>
+        <p>Dirección: Calle Ejemplo 123, Madrid, España</p>
+        <p>Aviso legal: Sitio web educativo sin fines comerciales.</p>
+    </footer>
+
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>
